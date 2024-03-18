@@ -202,6 +202,19 @@
     
 
 
+    <!-- http://onto.nexuslinguarum.eu/offensive-language#inDistribution -->
+
+
+    <owl:ObjectProperty rdf:about="http://onto.nexuslinguarum.eu/offensive-language#inDistribution">
+        <rdfs:domain rdf:resource="http://onto.nexuslinguarum.eu/offensive-language#OffensiveText"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <rdfs:label xml:lang="en">in distribution</rdfs:label>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxCardinality>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://onto.nexuslinguarum.eu/offensive-language#offensive_type -->
 
 

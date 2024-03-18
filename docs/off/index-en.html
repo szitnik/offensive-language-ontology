@@ -176,6 +176,10 @@ This ontology has the following classes and properties.</span>
          title="http://onto.nexuslinguarum.eu/offensive-language#category">category</a>
    </li>
    <li>
+      <a href="#inDistribution"
+         title="http://onto.nexuslinguarum.eu/offensive-language#inDistribution">in distribution</a>
+   </li>
+   <li>
       <a href="#http://purl.org/dc/terms/language" title="http://purl.org/dc/terms/language">language</a>
    </li>
    <li>
@@ -553,6 +557,12 @@ This section provides details for each class and property defined by Offensive l
             <a href="#http://purl.org/dc/terms/language" title="http://purl.org/dc/terms/language">language</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#inDistribution"
+               title="http://onto.nexuslinguarum.eu/offensive-language#inDistribution">in distribution</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="OffensiveText">
@@ -577,6 +587,8 @@ This section provides details for each class and property defined by Offensive l
                title="http://onto.nexuslinguarum.eu/offensive-language#aspect">aspect</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#category"
                title="http://onto.nexuslinguarum.eu/offensive-language#category">category</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#inDistribution"
+               title="http://onto.nexuslinguarum.eu/offensive-language#inDistribution">in distribution</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#offensive_type"
                title="http://onto.nexuslinguarum.eu/offensive-language#offensive_type">offensive type</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#offensive_type_1"
@@ -799,6 +811,10 @@ This section provides details for each class and property defined by Offensive l
             title="http://onto.nexuslinguarum.eu/offensive-language#category">category</a>
       </li>
       <li>
+         <a href="#inDistribution"
+            title="http://onto.nexuslinguarum.eu/offensive-language#inDistribution">in distribution</a>
+      </li>
+      <li>
          <a href="#http://purl.org/dc/terms/language" title="http://purl.org/dc/terms/language">language</a>
       </li>
       <li>
@@ -869,6 +885,29 @@ This section provides details for each class and property defined by Offensive l
             <dd>
                <a href="#Category"
                   title="http://onto.nexuslinguarum.eu/offensive-language#Category">Category</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="inDistribution">
+      <h3>in distribution<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://onto.nexuslinguarum.eu/offensive-language#inDistribution</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#OffensiveText"
+                  title="http://onto.nexuslinguarum.eu/offensive-language#OffensiveText">Object (instance) of offensive text in a textual form.</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://www.w3.org/ns/dcat#Distribution" title="http://www.w3.org/ns/dcat#Distribution">Distribution</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>

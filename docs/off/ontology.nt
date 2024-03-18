@@ -101,6 +101,14 @@
 <http://onto.nexuslinguarum.eu/offensive-language#category> <http://www.w3.org/2002/07/owl#maxCardinality> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <http://onto.nexuslinguarum.eu/offensive-language#category> <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
 # 
+# http://onto.nexuslinguarum.eu/offensive-language#inDistribution
+<http://onto.nexuslinguarum.eu/offensive-language#inDistribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://onto.nexuslinguarum.eu/offensive-language#inDistribution> <http://www.w3.org/2000/01/rdf-schema#domain> <http://onto.nexuslinguarum.eu/offensive-language#OffensiveText> .
+<http://onto.nexuslinguarum.eu/offensive-language#inDistribution> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dcat#Distribution> .
+<http://onto.nexuslinguarum.eu/offensive-language#inDistribution> <http://www.w3.org/2000/01/rdf-schema#label> "in distribution"@en .
+<http://onto.nexuslinguarum.eu/offensive-language#inDistribution> <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://onto.nexuslinguarum.eu/offensive-language#inDistribution> <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
 # http://onto.nexuslinguarum.eu/offensive-language#offensive_type
 <http://onto.nexuslinguarum.eu/offensive-language#offensive_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://onto.nexuslinguarum.eu/offensive-language#offensive_type> <http://www.w3.org/2000/01/rdf-schema#domain> <http://onto.nexuslinguarum.eu/offensive-language#OffensiveText> .

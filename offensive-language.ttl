@@ -189,6 +189,14 @@ off:category
   owl:minCardinality 0 ;
   owl:maxCardinality 3 .
 
+off:inDistribution
+  a owl:ObjectProperty ;
+  rdfs:label "in distribution"@en ;
+  rdfs:domain off:OffensiveText ;
+  rdfs:range dcat:Distribution ;
+  owl:minCardinality 1 ;
+  owl:maxCardinality 1 .
+
 dct:language
   a owl:ObjectProperty ;
   rdfs:label "language"@en ;
