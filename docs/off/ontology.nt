@@ -1,0 +1,424 @@
+<http://onto.nexuslinguarum.eu/offensive-language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://onto.nexuslinguarum.eu/offensive-language> <http://www.w3.org/2002/07/owl#versionIRI> <http://onto.nexuslinguarum.eu/offensive-language/1.0.0#> .
+<http://onto.nexuslinguarum.eu/offensive-language> <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/4.0/> .
+<http://onto.nexuslinguarum.eu/offensive-language> <http://purl.org/dc/terms/created> "2024-03-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://onto.nexuslinguarum.eu/offensive-language> <http://purl.org/dc/terms/title> "Offensive language schema"@en .
+<http://onto.nexuslinguarum.eu/offensive-language> <http://purl.org/vocab/vann/preferredNamespacePrefix> "off" .
+<http://onto.nexuslinguarum.eu/offensive-language> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://onto.nexuslinguarum.eu/offensive-language#" .
+<http://onto.nexuslinguarum.eu/offensive-language> <http://www.w3.org/2000/01/rdf-schema#comment> "OFF is an RDF vocabulary designed to enable simple and correct categorization of offensive language in multiple languages."@en .
+<http://onto.nexuslinguarum.eu/offensive-language> <http://www.w3.org/2000/01/rdf-schema#label> "Offensive language schema"@en .
+<http://onto.nexuslinguarum.eu/offensive-language> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0"@en .
+<http://onto.nexuslinguarum.eu/offensive-language> <https://schema.org/creator> <http://onto.nexuslinguarum.eu/offensive-language#SlavkoZitnik> .
+<http://onto.nexuslinguarum.eu/offensive-language> <https://schema.org/image> <file:/Users/slavkoz/Projects/ResearchProjects/offensive-language-llod-schema/TODO> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/example
+<http://purl.org/vocab/vann/example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#maxCardinality
+<http://www.w3.org/2002/07/owl#maxCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#minCardinality
+<http://www.w3.org/2002/07/owl#minCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/affiliation
+<https://schema.org/affiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/creator
+<https://schema.org/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/image
+<https://schema.org/image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://onto.nexuslinguarum.eu/offensive-language#aspect
+<http://onto.nexuslinguarum.eu/offensive-language#aspect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://onto.nexuslinguarum.eu/offensive-language#aspect> <http://www.w3.org/2000/01/rdf-schema#domain> <http://onto.nexuslinguarum.eu/offensive-language#OffensiveText> .
+<http://onto.nexuslinguarum.eu/offensive-language#aspect> <http://www.w3.org/2000/01/rdf-schema#range> <http://onto.nexuslinguarum.eu/offensive-language#Aspect> .
+<http://onto.nexuslinguarum.eu/offensive-language#aspect> <http://www.w3.org/2000/01/rdf-schema#label> "aspect"@en .
+<http://onto.nexuslinguarum.eu/offensive-language#aspect> <http://www.w3.org/2002/07/owl#maxCardinality> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://onto.nexuslinguarum.eu/offensive-language#aspect> <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language#category
+<http://onto.nexuslinguarum.eu/offensive-language#category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://onto.nexuslinguarum.eu/offensive-language#category> <http://www.w3.org/2000/01/rdf-schema#domain> <http://onto.nexuslinguarum.eu/offensive-language#OffensiveText> .
+<http://onto.nexuslinguarum.eu/offensive-language#category> <http://www.w3.org/2000/01/rdf-schema#range> <http://onto.nexuslinguarum.eu/offensive-language#Category> .
+<http://onto.nexuslinguarum.eu/offensive-language#category> <http://www.w3.org/2000/01/rdf-schema#label> "category"@en .
+<http://onto.nexuslinguarum.eu/offensive-language#category> <http://www.w3.org/2002/07/owl#maxCardinality> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://onto.nexuslinguarum.eu/offensive-language#category> <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language#offensive_type
+<http://onto.nexuslinguarum.eu/offensive-language#offensive_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://onto.nexuslinguarum.eu/offensive-language#offensive_type> <http://www.w3.org/2000/01/rdf-schema#domain> <http://onto.nexuslinguarum.eu/offensive-language#OffensiveText> .
+<http://onto.nexuslinguarum.eu/offensive-language#offensive_type> <http://www.w3.org/2000/01/rdf-schema#range> <http://onto.nexuslinguarum.eu/offensive-language#OffensiveType> .
+<http://onto.nexuslinguarum.eu/offensive-language#offensive_type> <http://www.w3.org/2000/01/rdf-schema#label> "offensive type"@en .
+<http://onto.nexuslinguarum.eu/offensive-language#offensive_type> <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://onto.nexuslinguarum.eu/offensive-language#offensive_type> <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language#offensive_type_1
+<http://onto.nexuslinguarum.eu/offensive-language#offensive_type_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://onto.nexuslinguarum.eu/offensive-language#offensive_type_1> <http://www.w3.org/2000/01/rdf-schema#domain> <http://onto.nexuslinguarum.eu/offensive-language#OffensiveText> .
+<http://onto.nexuslinguarum.eu/offensive-language#offensive_type_1> <http://www.w3.org/2000/01/rdf-schema#range> <http://onto.nexuslinguarum.eu/offensive-language#OffensiveType1> .
+<http://onto.nexuslinguarum.eu/offensive-language#offensive_type_1> <http://www.w3.org/2000/01/rdf-schema#label> "offensive type 1"@en .
+<http://onto.nexuslinguarum.eu/offensive-language#offensive_type_1> <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://onto.nexuslinguarum.eu/offensive-language#offensive_type_1> <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language#offensive_type_2
+<http://onto.nexuslinguarum.eu/offensive-language#offensive_type_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://onto.nexuslinguarum.eu/offensive-language#offensive_type_2> <http://www.w3.org/2000/01/rdf-schema#domain> <http://onto.nexuslinguarum.eu/offensive-language#OffensiveText> .
+<http://onto.nexuslinguarum.eu/offensive-language#offensive_type_2> <http://www.w3.org/2000/01/rdf-schema#range> <http://onto.nexuslinguarum.eu/offensive-language#OffensiveType2> .
+<http://onto.nexuslinguarum.eu/offensive-language#offensive_type_2> <http://www.w3.org/2000/01/rdf-schema#label> "offensive type 2"@en .
+<http://onto.nexuslinguarum.eu/offensive-language#offensive_type_2> <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://onto.nexuslinguarum.eu/offensive-language#offensive_type_2> <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language#target_1
+<http://onto.nexuslinguarum.eu/offensive-language#target_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://onto.nexuslinguarum.eu/offensive-language#target_1> <http://www.w3.org/2000/01/rdf-schema#domain> <http://onto.nexuslinguarum.eu/offensive-language#OffensiveText> .
+<http://onto.nexuslinguarum.eu/offensive-language#target_1> <http://www.w3.org/2000/01/rdf-schema#range> <http://onto.nexuslinguarum.eu/offensive-language#Target1> .
+<http://onto.nexuslinguarum.eu/offensive-language#target_1> <http://www.w3.org/2000/01/rdf-schema#label> "target 1"@en .
+<http://onto.nexuslinguarum.eu/offensive-language#target_1> <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://onto.nexuslinguarum.eu/offensive-language#target_1> <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language#target_2
+<http://onto.nexuslinguarum.eu/offensive-language#target_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://onto.nexuslinguarum.eu/offensive-language#target_2> <http://www.w3.org/2000/01/rdf-schema#domain> <http://onto.nexuslinguarum.eu/offensive-language#OffensiveText> .
+<http://onto.nexuslinguarum.eu/offensive-language#target_2> <http://www.w3.org/2000/01/rdf-schema#range> <http://onto.nexuslinguarum.eu/offensive-language#Target2> .
+<http://onto.nexuslinguarum.eu/offensive-language#target_2> <http://www.w3.org/2000/01/rdf-schema#label> "target 2"@en .
+<http://onto.nexuslinguarum.eu/offensive-language#target_2> <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://onto.nexuslinguarum.eu/offensive-language#target_2> <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language#vulgar
+<http://onto.nexuslinguarum.eu/offensive-language#vulgar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://onto.nexuslinguarum.eu/offensive-language#vulgar> <http://www.w3.org/2000/01/rdf-schema#domain> <http://onto.nexuslinguarum.eu/offensive-language#OffensiveText> .
+<http://onto.nexuslinguarum.eu/offensive-language#vulgar> <http://www.w3.org/2000/01/rdf-schema#range> <http://onto.nexuslinguarum.eu/offensive-language#Vulgar> .
+<http://onto.nexuslinguarum.eu/offensive-language#vulgar> <http://www.w3.org/2000/01/rdf-schema#label> "vulgar"@en .
+<http://onto.nexuslinguarum.eu/offensive-language#vulgar> <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://onto.nexuslinguarum.eu/offensive-language#vulgar> <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://purl.org/dc/terms/language
+<http://purl.org/dc/terms/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/language> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Dataset> .
+<http://purl.org/dc/terms/language> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Distribution> .
+<http://purl.org/dc/terms/language> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/LinguisticSystem> .
+<http://purl.org/dc/terms/LinguisticSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/language> <http://www.w3.org/2000/01/rdf-schema#label> "language"@en .
+<http://purl.org/dc/terms/language> <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.org/dc/terms/language> <http://www.w3.org/2004/02/skos/core#definition> "A language of the resource."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://onto.nexuslinguarum.eu/offensive-language#text
+<http://onto.nexuslinguarum.eu/offensive-language#text> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://onto.nexuslinguarum.eu/offensive-language#text> <http://www.w3.org/2000/01/rdf-schema#domain> <http://onto.nexuslinguarum.eu/offensive-language#OffensiveText> .
+<http://onto.nexuslinguarum.eu/offensive-language#text> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://onto.nexuslinguarum.eu/offensive-language#text> <http://www.w3.org/2000/01/rdf-schema#label> "text"@en .
+<http://onto.nexuslinguarum.eu/offensive-language#text> <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://onto.nexuslinguarum.eu/offensive-language#text> <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://onto.nexuslinguarum.eu/offensive-language#text> <http://www.w3.org/2004/02/skos/core#definition> "Textual representation of an offensive language."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://onto.nexuslinguarum.eu/offensive-language#Aspect
+<http://onto.nexuslinguarum.eu/offensive-language#Aspect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://onto.nexuslinguarum.eu/offensive-language#Aspect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://onto.nexuslinguarum.eu/offensive-language#Aspect> <http://www.w3.org/2000/01/rdf-schema#label> "Aspect"@en .
+<http://onto.nexuslinguarum.eu/offensive-language#Aspect> <http://www.w3.org/2004/02/skos/core#definition> "Offensive language annotation category."@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language#Category
+<http://onto.nexuslinguarum.eu/offensive-language#Category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://onto.nexuslinguarum.eu/offensive-language#Category> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://onto.nexuslinguarum.eu/offensive-language#Category> <http://www.w3.org/2000/01/rdf-schema#label> "Category"@en .
+<http://onto.nexuslinguarum.eu/offensive-language#Category> <http://www.w3.org/2004/02/skos/core#definition> "Offensive language annotation category."@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language#OffensiveText
+<http://onto.nexuslinguarum.eu/offensive-language#OffensiveText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://onto.nexuslinguarum.eu/offensive-language#OffensiveText> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://onto.nexuslinguarum.eu/offensive-language#OffensiveText> <http://www.w3.org/2000/01/rdf-schema#label> "Object (instance) of offensive text in a textual form."@en .
+<http://onto.nexuslinguarum.eu/offensive-language#OffensiveText> <http://www.w3.org/2004/02/skos/core#definition> "An object that is a specific instance in a distribution."@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language#OffensiveType
+<http://onto.nexuslinguarum.eu/offensive-language#OffensiveType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://onto.nexuslinguarum.eu/offensive-language#OffensiveType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://onto.nexuslinguarum.eu/offensive-language#OffensiveType> <http://www.w3.org/2000/01/rdf-schema#label> "Offensive type"@en .
+<http://onto.nexuslinguarum.eu/offensive-language#OffensiveType> <http://www.w3.org/2004/02/skos/core#definition> "Offensive language annotation category."@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language#OffensiveType1
+<http://onto.nexuslinguarum.eu/offensive-language#OffensiveType1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://onto.nexuslinguarum.eu/offensive-language#OffensiveType1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://onto.nexuslinguarum.eu/offensive-language#OffensiveType1> <http://www.w3.org/2000/01/rdf-schema#label> "Offensive type 1"@en .
+<http://onto.nexuslinguarum.eu/offensive-language#OffensiveType1> <http://www.w3.org/2004/02/skos/core#definition> "Offensive language annotation category."@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language#OffensiveType2
+<http://onto.nexuslinguarum.eu/offensive-language#OffensiveType2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://onto.nexuslinguarum.eu/offensive-language#OffensiveType2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://onto.nexuslinguarum.eu/offensive-language#OffensiveType2> <http://www.w3.org/2000/01/rdf-schema#label> "Offensive type 2"@en .
+<http://onto.nexuslinguarum.eu/offensive-language#OffensiveType2> <http://www.w3.org/2004/02/skos/core#definition> "Offensive language annotation category."@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language#Target1
+<http://onto.nexuslinguarum.eu/offensive-language#Target1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://onto.nexuslinguarum.eu/offensive-language#Target1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://onto.nexuslinguarum.eu/offensive-language#Target1> <http://www.w3.org/2000/01/rdf-schema#label> "Target 1"@en .
+<http://onto.nexuslinguarum.eu/offensive-language#Target1> <http://www.w3.org/2004/02/skos/core#definition> "Offensive language annotation category."@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language#Target2
+<http://onto.nexuslinguarum.eu/offensive-language#Target2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://onto.nexuslinguarum.eu/offensive-language#Target2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://onto.nexuslinguarum.eu/offensive-language#Target2> <http://www.w3.org/2000/01/rdf-schema#label> "Target 2"@en .
+<http://onto.nexuslinguarum.eu/offensive-language#Target2> <http://www.w3.org/2004/02/skos/core#definition> "Offensive language annotation category."@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language#Vulgar
+<http://onto.nexuslinguarum.eu/offensive-language#Vulgar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://onto.nexuslinguarum.eu/offensive-language#Vulgar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://onto.nexuslinguarum.eu/offensive-language#Vulgar> <http://www.w3.org/2000/01/rdf-schema#label> "Vulgar"@en .
+<http://onto.nexuslinguarum.eu/offensive-language#Vulgar> <http://www.w3.org/2004/02/skos/core#definition> "Offensive language annotation category."@en .
+# 
+# http://purl.org/dc/terms/LinguisticSystem
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concept"@en .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2004/02/skos/core#definition> "A SKOS concept can be viewed as an idea or notion; a unit of thought. However, what constitutes a unit of thought is subjective, and this definition is meant to be suggestive, rather than restrictive."@en .
+# 
+# http://www.w3.org/ns/dcat#Dataset
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/dcat#Dataset> <http://purl.org/vocab/vann/example> "Specific collection of annotated textual data using offensive language categories."@en .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset"@en .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#definition> "A collection of data, published or curated by a single source, and available for access or download in one or more represenations."@en .
+# 
+# http://www.w3.org/ns/dcat#Distribution
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2000/01/rdf-schema#label> "Distribution"@en .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2004/02/skos/core#definition> "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above)."@en .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://onto.nexuslinguarum.eu/offensive-language#SlavkoZitnik
+<http://onto.nexuslinguarum.eu/offensive-language#SlavkoZitnik> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language#SlavkoZitnik> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://onto.nexuslinguarum.eu/offensive-language#SlavkoZitnik> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://orcid.org/0000-0003-3452-1106> .
+<http://onto.nexuslinguarum.eu/offensive-language#SlavkoZitnik> <http://xmlns.com/foaf/0.1/homepage> <https://zitnik.si> .
+<http://onto.nexuslinguarum.eu/offensive-language#SlavkoZitnik> <http://xmlns.com/foaf/0.1/mbox> "slavko.zitnik@fri.uni-lj.si" .
+<http://onto.nexuslinguarum.eu/offensive-language#SlavkoZitnik> <http://xmlns.com/foaf/0.1/name> "Slavko Žitnik"@en .
+<http://onto.nexuslinguarum.eu/offensive-language#SlavkoZitnik> <https://schema.org/affiliation> _:genid1 .
+_:genid1 <http://xmlns.com/foaf/0.1/name> "University of Ljubljana, Faculty of Computer and Information Science" .
+_:genid1 <http://xmlns.com/foaf/0.1/homepage> <https://www.fri.uni-lj.si> .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#Ableism
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Ableism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Ableism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#Aspect> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Ableism> <http://www.w3.org/2000/01/rdf-schema#label> "Physical/mental disabilities (ableism)"@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#Absent
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Absent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Absent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#Target2> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Absent> <http://www.w3.org/2000/01/rdf-schema#label> "Absent"@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#Ageism
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Ageism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Ageism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#Aspect> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Ageism> <http://www.w3.org/2000/01/rdf-schema#label> "Ageism"@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#Classism
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Classism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Classism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#Aspect> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Classism> <http://www.w3.org/2000/01/rdf-schema#label> "Social class (classism)"@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#Discredit
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Discredit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Discredit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#OffensiveType1> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Discredit> <http://www.w3.org/2000/01/rdf-schema#label> "Discredit"@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#Exaggeration
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Exaggeration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Exaggeration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#Category> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Exaggeration> <http://www.w3.org/2000/01/rdf-schema#label> "Exaggeration"@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#Group
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#Target1> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Group> <http://www.w3.org/2000/01/rdf-schema#label> "Group"@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#HateSpeech
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#HateSpeech> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#HateSpeech> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#OffensiveType> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#HateSpeech> <http://www.w3.org/2000/01/rdf-schema#label> "Hate speech"@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#Homophobic
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Homophobic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Homophobic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#Aspect> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Homophobic> <http://www.w3.org/2000/01/rdf-schema#label> "Homophobic"@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#Ideologism
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Ideologism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Ideologism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#Aspect> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Ideologism> <http://www.w3.org/2000/01/rdf-schema#label> "Ideologism"@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#IndWrtGrGrWrtInd
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#IndWrtGrGrWrtInd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#IndWrtGrGrWrtInd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#Target1> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#IndWrtGrGrWrtInd> <http://www.w3.org/2000/01/rdf-schema#label> "Ind. wrt. Gr./Gr. wrt. Ind."@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#Individual
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Individual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Individual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#Target1> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Individual> <http://www.w3.org/2000/01/rdf-schema#label> "Individual"@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#Insult
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Insult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Insult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#OffensiveType> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Insult> <http://www.w3.org/2000/01/rdf-schema#label> "Insult"@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#Irony
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Irony> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Irony> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#Category> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Irony> <http://www.w3.org/2000/01/rdf-schema#label> "Irony"@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#Metaphor
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Metaphor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Metaphor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#Category> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Metaphor> <http://www.w3.org/2000/01/rdf-schema#label> "Metaphor"@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#No
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#No> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#No> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#Vulgar> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#No> <http://www.w3.org/2000/01/rdf-schema#label> "No"@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#NonTargeted
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#NonTargeted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#NonTargeted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#Target1> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#NonTargeted> <http://www.w3.org/2000/01/rdf-schema#label> "Non-targeted"@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#OtherAspect
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#OtherAspect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#OtherAspect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#Aspect> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#OtherAspect> <http://www.w3.org/2000/01/rdf-schema#label> "Other Aspect"@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#OtherCategory
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#OtherCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#OtherCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#Category> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#OtherCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Other Category"@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#Present
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Present> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Present> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#Target2> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Present> <http://www.w3.org/2000/01/rdf-schema#label> "Present"@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#ProfaneReligion
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#ProfaneReligion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#ProfaneReligion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#Aspect> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#ProfaneReligion> <http://www.w3.org/2000/01/rdf-schema#label> "Profane (religion)"@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#Racist
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Racist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Racist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#Aspect> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Racist> <http://www.w3.org/2000/01/rdf-schema#label> "Racist"@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#RhetoricalQuestion
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#RhetoricalQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#RhetoricalQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#Category> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#RhetoricalQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "Rhetorical question"@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#Sexist
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Sexist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Sexist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#Aspect> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Sexist> <http://www.w3.org/2000/01/rdf-schema#label> "Sexist"@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#Simile
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Simile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Simile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#Category> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Simile> <http://www.w3.org/2000/01/rdf-schema#label> "Simile"@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#Threat
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Threat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Threat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#OffensiveType2> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Threat> <http://www.w3.org/2000/01/rdf-schema#label> "Threat"@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#Xenophobic
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Xenophobic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Xenophobic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#Aspect> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Xenophobic> <http://www.w3.org/2000/01/rdf-schema#label> "Xenophobic"@en .
+# 
+# http://onto.nexuslinguarum.eu/offensive-language/attribute#Yes
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Yes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Yes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://onto.nexuslinguarum.eu/offensive-language#Vulgar> .
+<http://onto.nexuslinguarum.eu/offensive-language/attribute#Yes> <http://www.w3.org/2000/01/rdf-schema#label> "Yes"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
