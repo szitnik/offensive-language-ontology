@@ -1,0 +1,322 @@
+@prefix   dcat: <http://www.w3.org/ns/dcat#> .
+@prefix    dct: <http://purl.org/dc/terms/> .
+@prefix   foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix    owl: <http://www.w3.org/2002/07/owl#> .
+@prefix    rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix   rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix    xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix   vann: <http://purl.org/vocab/vann/> .
+@prefix schema: <https://schema.org/> .
+@prefix   skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix     cc: <http://creativecommons.org/ns#> . 
+
+@prefix     off: <http://onto.nexuslinguarum.eu/offensive-language#> .
+@prefix offattr: <http://onto.nexuslinguarum.eu/offensive-language/attribute#> .
+
+<http://onto.nexuslinguarum.eu/offensive-language>
+  a owl:Ontology ;    
+  vann:preferredNamespaceUri "http://onto.nexuslinguarum.eu/offensive-language#";
+  owl:versionIRI <http://onto.nexuslinguarum.eu/offensive-language/1.0.0#> ;
+  owl:versionInfo "1.0.0"@en ;
+  cc:license <http://creativecommons.org/licenses/by/4.0/> ;
+  vann:preferredNamespacePrefix "off";
+  dct:created "2024-03-18"^^xsd:date ;  
+  rdfs:label "Offensive language schema"@en ;
+  dct:title "Offensive language schema"@en ;
+  rdfs:comment "OFF is an RDF vocabulary designed to enable simple and correct categorization of offensive language in multiple languages."@en ;
+  schema:creator off:SlavkoZitnik ;
+  schema:image <TODO> .
+
+off:SlavkoZitnik
+  a foaf:Person ;
+  foaf:name "Slavko Žitnik"@en ;
+  schema:affiliation [
+    foaf:homepage <https://www.fri.uni-lj.si> ;
+    foaf:name "University of Ljubljana, Faculty of Computer and Information Science" ;
+  ] ;
+  foaf:homepage <https://zitnik.si> ;
+  foaf:mbox "slavko.zitnik@fri.uni-lj.si" ;
+  rdfs:seeAlso <http://orcid.org/0000-0003-3452-1106> .
+
+###############################################################################
+##  Classes
+###############################################################################
+
+dcat:Dataset
+  a owl:Class ;
+  rdfs:label "Dataset"@en ;
+  skos:definition "A collection of data, published or curated by a single source, and available for access or download in one or more represenations."@en ;
+  vann:example "Specific collection of annotated textual data using offensive language categories."@en .
+
+dcat:Distribution
+  a owl:Class ;
+  rdfs:label "Distribution"@en ;
+  skos:definition "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above)."@en .
+
+skos:Concept
+  a owl:Class ;
+  rdfs:label "Concept"@en ;
+  skos:definition "A SKOS concept can be viewed as an idea or notion; a unit of thought. However, what constitutes a unit of thought is subjective, and this definition is meant to be suggestive, rather than restrictive."@en .
+
+off:OffensiveText
+  a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "Object (instance) of offensive text in a textual form."@en ;
+  skos:definition "An object that is a specific instance in a distribution."@en .
+
+off:Target1
+  a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "Target 1"@en ;
+  skos:definition "Offensive language annotation category."@en .
+
+off:Target2
+  a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "Target 2"@en ;
+  skos:definition "Offensive language annotation category."@en .
+
+off:Vulgar
+  a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "Vulgar"@en ;
+  skos:definition "Offensive language annotation category."@en .
+
+off:OffensiveType
+  a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "Offensive type"@en ;
+  skos:definition "Offensive language annotation category."@en .
+
+off:OffensiveType1
+  a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "Offensive type 1"@en ;
+  skos:definition "Offensive language annotation category."@en .
+
+off:OffensiveType2
+  a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "Offensive type 2"@en ;
+  skos:definition "Offensive language annotation category."@en .
+
+off:Aspect
+  a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "Aspect"@en ;
+  skos:definition "Offensive language annotation category."@en .
+
+off:Category
+  a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "Category"@en ;
+  skos:definition "Offensive language annotation category."@en .
+
+###############################################################################
+##  Properties
+###############################################################################
+
+off:text
+  a owl:DatatypeProperty ;
+  rdfs:label "text"@en ;
+  skos:definition "Textual representation of an offensive language."@en ;
+  owl:minCardinality 1 ;
+  owl:maxCardinality 1 ;
+  rdfs:domain off:OffensiveText ;
+  rdfs:range xsd:string .
+
+off:target_1
+  a owl:ObjectProperty ;
+  rdfs:label "target 1"@en ;
+  rdfs:domain off:OffensiveText ;
+  rdfs:range off:Target1 ;
+  owl:minCardinality 0 ;
+  owl:maxCardinality 1 .
+
+off:target_2
+  a owl:ObjectProperty ;
+  rdfs:label "target 2"@en ;
+  rdfs:domain off:OffensiveText ;
+  rdfs:range off:Target2 ;
+  owl:minCardinality 0 ;
+  owl:maxCardinality 1 .
+
+off:vulgar
+  a owl:ObjectProperty ;
+  rdfs:label "vulgar"@en ;
+  rdfs:domain off:OffensiveText ;
+  rdfs:range off:Vulgar ;
+  owl:minCardinality 0 ;
+  owl:maxCardinality 1 .
+
+off:offensive_type
+  a owl:ObjectProperty ;
+  rdfs:label "offensive type"@en ;
+  rdfs:domain off:OffensiveText ;
+  rdfs:range off:OffensiveType ;
+  owl:minCardinality 0 ;
+  owl:maxCardinality 1 .
+
+off:offensive_type_1
+  a owl:ObjectProperty ;
+  rdfs:label "offensive type 1"@en ;
+  rdfs:domain off:OffensiveText ;
+  rdfs:range off:OffensiveType1 ;
+  owl:minCardinality 0 ;
+  owl:maxCardinality 1 .
+
+off:offensive_type_2
+  a owl:ObjectProperty ;
+  rdfs:label "offensive type 2"@en ;
+  rdfs:domain off:OffensiveText ;
+  rdfs:range off:OffensiveType2 ;
+  owl:minCardinality 0 ;
+  owl:maxCardinality 1 .
+
+off:aspect
+  a owl:ObjectProperty ;
+  rdfs:label "aspect"@en ;
+  rdfs:domain off:OffensiveText ;
+  rdfs:range off:Aspect ;
+  owl:minCardinality 0 ;
+  owl:maxCardinality 3 .
+
+off:category
+  a owl:ObjectProperty ;
+  rdfs:label "category"@en ;
+  rdfs:domain off:OffensiveText ;
+  rdfs:range off:Category ;
+  owl:minCardinality 0 ;
+  owl:maxCardinality 3 .
+
+off:inDistribution
+  a owl:ObjectProperty ;
+  rdfs:label "in distribution"@en ;
+  rdfs:domain off:OffensiveText ;
+  rdfs:range dcat:Distribution ;
+  owl:minCardinality 1 ;
+  owl:maxCardinality 1 .
+
+dct:language
+  a owl:ObjectProperty ;
+  rdfs:label "language"@en ;
+  skos:definition "A language of the resource."@en ;
+  owl:minCardinality 1 ;
+  rdfs:domain dcat:Dataset, dcat:Distribution ;
+  rdfs:range dct:LinguisticSystem .
+
+###############################################################################
+##  Instances
+###############################################################################
+
+offattr:Group 
+  a off:Target1 ;
+  rdfs:label "Group"@en .
+
+offattr:IndWrtGrGrWrtInd
+  a off:Target1 ;
+  rdfs:label "Ind. wrt. Gr./Gr. wrt. Ind."@en .
+
+offattr:Individual
+  a off:Target1 ;
+  rdfs:label "Individual"@en .
+
+offattr:NonTargeted
+  a off:Target1 ;
+  rdfs:label "Non-targeted"@en .
+
+offattr:Absent
+  a off:Target2 ;
+  rdfs:label "Absent"@en .
+
+offattr:Present
+  a off:Target2 ;
+  rdfs:label "Present"@en .
+
+offattr:No
+  a off:Vulgar ;
+  rdfs:label "No"@en .
+
+offattr:Yes
+  a off:Vulgar ;
+  rdfs:label "Yes"@en .
+
+offattr:HateSpeech
+  a off:OffensiveType ;
+  rdfs:label "Hate speech"@en .
+
+offattr:Insult
+  a off:OffensiveType ;
+  rdfs:label "Insult"@en .
+
+offattr:Discredit
+  a off:OffensiveType1 ;
+  rdfs:label "Discredit"@en .
+
+offattr:Threat
+  a off:OffensiveType2 ;
+  rdfs:label "Threat"@en .
+
+offattr:Ageism
+  a off:Aspect ;
+  rdfs:label "Ageism"@en .
+
+offattr:Homophobic
+  a off:Aspect ;
+  rdfs:label "Homophobic"@en .
+
+offattr:Ideologism
+  a off:Aspect ; 
+  rdfs:label "Ideologism"@en .
+
+offattr:Ableism
+  a off:Aspect ;
+  rdfs:label "Physical/mental disabilities (ableism)"@en .
+
+offattr:ProfaneReligion
+  a off:Aspect ;
+  rdfs:label "Profane (religion)"@en .
+
+offattr:Racist
+  a off:Aspect ;
+  rdfs:label "Racist"@en .
+
+offattr:Sexist
+  a off:Aspect ;
+  rdfs:label "Sexist"@en .
+
+offattr:Classism
+  a off:Aspect ;
+  rdfs:label "Social class (classism)"@en .
+
+offattr:Xenophobic
+  a off:Aspect ;
+  rdfs:label "Xenophobic"@en .
+
+offattr:OtherAspect
+  a off:Aspect ;
+  rdfs:label "Other Aspect"@en .
+
+offattr:Exaggeration
+  a off:Category ;
+  rdfs:label "Exaggeration"@en .
+
+offattr:Irony
+  a off:Category ;
+  rdfs:label "Irony"@en .
+
+offattr:Metaphor
+  a off:Category ;
+  rdfs:label "Metaphor"@en .
+
+offattr:RhetoricalQuestion
+  a off:Category ;
+  rdfs:label "Rhetorical question"@en .
+
+offattr:Simile
+  a off:Category ;
+  rdfs:label "Simile"@en .
+
+offattr:OtherCategory
+  a off:Category ; 
+  rdfs:label "Other Category"@en .

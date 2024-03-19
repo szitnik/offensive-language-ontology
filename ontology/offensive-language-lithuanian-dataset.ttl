@@ -1,0 +1,45 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix    rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+@prefix     off: <http://onto.nexuslinguarum.eu/offensive-language#> .
+@prefix offattr: <http://onto.nexuslinguarum.eu/offensive-language/attribute#> .
+
+<http://onto.nexuslinguarum.eu/offensive-language/dataset/lithuanian-sample-dataset>
+  owl:versionInfo "0.1.0" ;
+  a dcat:Dataset ;
+  dct:identifier "lithuanian-sample-dataset" ;
+  dct:title "Lithuanian sample dataset"@en ;
+  dct:description "Lithuanian sample dataset that serves as en example for the proposed taxonomy"@en ;
+  dct:issued "2024-03-18"^^xsd:date ;
+  dct:language <http://publications.europa.eu/resource/authority/language/LIT> ;
+  dcat:contactPoint [
+    a vcard:Kind ;
+    vcard:fn "Giedre Valunaite Oleskevicienė" ;
+    vcard:hasEmail <mailto:gentrygiedre@gmail.com>
+  ] ;
+  dct:publisher off:SlavkoZitnik ;
+  dct:creator off:SlavkoZitnik ;
+  dcat:theme <https://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+  dcat:theme <https://publications.europa.eu/resource/authority/data-theme/EDUC> ;
+  
+  dcat:distribution <http://onto.nexuslinguarum.eu/offensive-language/distribution/lithuanian-sample-dataset-2024-03-18> .
+
+
+<http://onto.nexuslinguarum.eu/offensive-language/distribution/lithuanian-sample-dataset-2024-03-18>
+  a dcat:Distribution ;
+  dct:title "Lithuanian sample distribution"@en ;
+  dct:identifier "lithuanian-sample-dataset-2024-03-18" ;
+  dct:language <http://publications.europa.eu/resource/authority/language/LIT> ;
+  dct:license <https://creativecommons.org/licenses/by-sa/4.0/> .
+  
+# Data
+
+<http://onto.nexuslinguarum.eu/offensive-language/distribution/lithuanian-sample-dataset-2024-03-18/47bd3b31-ff76-4666-b9b2-4be7f951f959> 
+  a off:OffensiveText ; 
+  off:inDistribution <http://onto.nexuslinguarum.eu/offensive-language/distribution/lithuanian-sample-dataset-2024-03-18> ;
+  off:text "Less than 100 edits to articles in 2.5 years, yet you have no problem chiming in and rudely making bad situations worse." ;
+  off:target_1 offattr:Individual .
+

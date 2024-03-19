@@ -1,0 +1,385 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://nexuslinguarum.eu/ontologies/offensive-language#"
+     xml:base="https://nexuslinguarum.eu/ontologies/offensive-language"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#available_in -->
+
+    <owl:ObjectProperty rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#available_in">
+        <rdfs:domain rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Dataset"/>
+        <rdfs:range rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Language"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#collected_from -->
+
+    <owl:ObjectProperty rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#collected_from">
+        <rdfs:domain rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Dataset"/>
+        <rdfs:range rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#contains_data_item -->
+
+    <owl:ObjectProperty rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#contains_data_item">
+        <rdfs:domain rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Dataset"/>
+        <rdfs:range rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Offensiveness"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#contains_topic -->
+
+    <owl:ObjectProperty rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#contains_topic">
+        <rdfs:domain rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Dataset"/>
+        <rdfs:range rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#published_in -->
+
+    <owl:ObjectProperty rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#published_in">
+        <rdfs:domain rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Dataset"/>
+        <rdfs:range rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Reference"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#related_to -->
+
+    <owl:ObjectProperty rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#related_to">
+        <rdfs:domain rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Dataset"/>
+        <rdfs:range rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#author -->
+
+    <owl:DatatypeProperty rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#author">
+        <rdfs:domain rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Dataset"/>
+        <rdfs:domain rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#citation -->
+
+    <owl:DatatypeProperty rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#citation">
+        <rdfs:domain rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#name -->
+
+    <owl:DatatypeProperty rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#name">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#text -->
+
+    <owl:DatatypeProperty rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#text">
+        <rdfs:domain rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Offensiveness"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#url -->
+
+    <owl:DatatypeProperty rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#url">
+        <rdfs:domain rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Dataset"/>
+        <rdfs:domain rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Reference"/>
+        <rdfs:domain rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Source"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#Abusive -->
+
+    <owl:Class rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#Abusive">
+        <rdfs:subClassOf rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Insulting"/>
+    </owl:Class>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#Annotation -->
+
+    <owl:Class rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#Annotation"/>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#Dataset -->
+
+    <owl:Class rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#Dataset">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#available_in"/>
+                <owl:someValuesFrom rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Language"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#collected_from"/>
+                <owl:someValuesFrom rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Source"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#published_in"/>
+                <owl:someValuesFrom rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Reference"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Dataset that contains data items of offensive language.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#Expressiveness -->
+
+    <owl:Class rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#Expressiveness">
+        <rdfs:subClassOf rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Annotation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#Group -->
+
+    <owl:Class rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#Group">
+        <rdfs:subClassOf rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Type"/>
+    </owl:Class>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#Harassment -->
+
+    <owl:Class rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#Harassment">
+        <rdfs:subClassOf rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Hate_speech"/>
+    </owl:Class>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#Hate_speech -->
+
+    <owl:Class rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#Hate_speech">
+        <rdfs:subClassOf rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Offensive"/>
+    </owl:Class>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#Individual -->
+
+    <owl:Class rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#Individual">
+        <rdfs:subClassOf rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Type"/>
+    </owl:Class>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#Insulting -->
+
+    <owl:Class rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#Insulting">
+        <rdfs:subClassOf rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Offensive"/>
+    </owl:Class>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#Language -->
+
+    <owl:Class rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#Language">
+        <rdfs:comment xml:lang="en">Languages in which the dataset is available.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#Level -->
+
+    <owl:Class rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#Level">
+        <rdfs:subClassOf rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Target"/>
+    </owl:Class>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#Non-offensive -->
+
+    <owl:Class rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#Non-offensive">
+        <rdfs:subClassOf rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Offensiveness"/>
+    </owl:Class>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#Offensive -->
+
+    <owl:Class rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#Offensive">
+        <rdfs:subClassOf rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Offensiveness"/>
+    </owl:Class>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#Offensiveness -->
+
+    <owl:Class rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#Offensiveness">
+        <rdfs:subClassOf rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Annotation"/>
+        <rdfs:comment xml:lang="en">Offensive selected as a general term. Can be also generally represented as &apos;abusive,&apos; &apos;toxic,&apos; ... but &apos;offensive&apos; term is a more general.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#Reference -->
+
+    <owl:Class rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#Reference">
+        <rdfs:comment xml:lang="en">Publication or work/link that overviews or offers the dataset.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#Slur -->
+
+    <owl:Class rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#Slur">
+        <rdfs:subClassOf rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Hate_speech"/>
+    </owl:Class>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#Source -->
+
+    <owl:Class rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#Source">
+        <rdfs:comment xml:lang="en">Data source where offensive texts were collected from.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#Taboo -->
+
+    <owl:Class rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#Taboo">
+        <rdfs:subClassOf rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Offensive"/>
+    </owl:Class>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#Target -->
+
+    <owl:Class rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#Target">
+        <rdfs:subClassOf rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Annotation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#Topic -->
+
+    <owl:Class rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#Topic">
+        <rdfs:comment xml:lang="en">Topic that is addressed by the data item.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#Type -->
+
+    <owl:Class rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#Type">
+        <rdfs:subClassOf rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Target"/>
+    </owl:Class>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#Vulgar -->
+
+    <owl:Class rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#Vulgar">
+        <rdfs:subClassOf rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Taboo"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#Explicit -->
+
+    <owl:NamedIndividual rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#Explicit">
+        <rdf:type rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Expressiveness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#External -->
+
+    <owl:NamedIndividual rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#External">
+        <rdf:type rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Level"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#Implicit -->
+
+    <owl:NamedIndividual rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#Implicit">
+        <rdf:type rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Expressiveness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nexuslinguarum.eu/ontologies/offensive-language#Internal -->
+
+    <owl:NamedIndividual rdf:about="https://nexuslinguarum.eu/ontologies/offensive-language#Internal">
+        <rdf:type rdf:resource="https://nexuslinguarum.eu/ontologies/offensive-language#Level"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

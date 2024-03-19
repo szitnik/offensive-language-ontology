@@ -1,0 +1,36 @@
+01 - Target 1
+    - Group
+    - Ind. wrt. Gr./Gr. wrt. Ind.
+    - Individual
+    - Non-targeted
+02 - Target 2
+    - absent
+    - present
+03 - Vulgar
+    - no
+    - yes
+04 - Offensive type
+    - Hate speech
+    - Insult
+04a - Offensive type 1
+    - Discredit
+04b - Offensive type 2
+    - Threat
+05 - Aspects (0 to 3 selections of aspects)
+    - Ageism
+    - Homophobic
+    - Ideologism
+    - Physical/mental disabilities (ableism)
+    - Profane (religion)
+    - Racist
+    - Sexist
+    - Social class (classism)
+    - Xenophobic
+    - Other
+06 - Category (0 to 3 selections of aspects)
+    - Exaggeration
+    - Irony
+    - Metaphor
+    - Rhetorical question
+    - Simile
+    - Other
